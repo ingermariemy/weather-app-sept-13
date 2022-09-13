@@ -1,0 +1,228 @@
+h1 {
+  color: #86c3fa;
+  display: inline;
+  font-family: "Bebas Neue", cursive;
+  text-decoration: underline;
+  margin-left: 20px;
+}
+
+h1:hover {
+  color: #016fc5;
+}
+.navbar {
+  background: none;
+  display: flex;
+  color: #ace0f9;
+  padding-bottom: 250px;
+  margin-top: -300px;
+  margin-right: 40px;
+  margin-left: 460px;
+}
+.search {
+  margin-left: 10px;
+  color: #016fc5;
+  background-color: #ace0f9;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #86c3fa;
+  border-width: 1px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.form-control {
+  background-color: #ffffff;
+  border-color: #86c3fa;
+  font-family: "Bebas Neue", cursive;
+}
+
+h2 {
+  color: #016fc5;
+  display: block;
+  font-family: "Bebas Neue", cursive;
+  font-size: large;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+h3 {
+  color: #016fc5;
+  display: block;
+  font-family: "Bebas Neue", cursive;
+  font-size: large;
+  text-align: left;
+  margin-top: 5px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+#currentC {
+  color: #016fc5;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+#E-temp {
+  display: block;
+  color: #016fc5;
+  margin-left: 120px;
+  margin-top: -74px;
+  font-size: 50px;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+#temp {
+  color: #016fc5;
+  font-size: 50px;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+#currentF {
+  color: #016fc5;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  margin-top: 0px;
+  text-decoration: none;
+}
+.currentC:hover {
+  cursor: pointer;
+}
+
+.currentF:hover {
+  cursor: pointer;
+}
+
+.humidity {
+  color: #016fc5;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  margin-left: 20px;
+}
+
+.windspeed {
+  color: #016fc5;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  margin-left: 20px;
+}
+
+.row {
+  background: none;
+  display: inline-flex;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.col-2 {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ace0f9;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #016fc5;
+  font-family: "Lato", sans-serif;
+  font-size: large;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 150px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 50px;
+}
+
+.container {
+  align-items: center;
+  border-radius: 45px;
+  margin-top: 50px;
+  margin-left: 300px;
+  background: linear-gradient(to bottom right, #fff1eb 20%, #ace0f9 100%);
+  width: 800px;
+  padding-right: 10px;
+  max-width: max-content;
+  display: block;
+  height: 580px;
+  position: absolute;
+  box-shadow: 0px 0px 11px #e7e0e0;
+  border-width: 1px;
+}
+
+#location-button {
+  border: none;
+  color: #86c3fa;
+  background: none;
+  font-size: 40px;
+}
+
+#location-button:hover {
+  cursor: pointer;
+  color: #016fc5;
+  font-size: 50px;
+}
+
+.link {
+  text-decoration: none;
+  padding-top: 630px;
+  padding-left: 300px;
+  color: #86c3fa;
+}
+
+.currentTemp {
+  width: 200px;
+  padding-top: none;
+  border-color: #86c3fa;
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+#line {
+  font-size: 50px;
+  font-weight: lighter;
+  opacity: 0.5;
+  color: #016fc5;
+}
+
+#description {
+  font-size: 15px;
+  color: #016fc5;
+  margin-left: 20px;
+}
+
+#weather-icon {
+  display: block;
+  margin-left: 300px;
+  margin-top: -150px;
+  padding-bottom: 150px;
+  width: 80px;
+  height: 80px;
+}
+
+.weather-forecast-temperature-low {
+  opacity: 0.5;
+}
+
+.weather-forecast-date {
+  font-size: 18px;
+}
+
+.weather-forecast-temperature {
+  font-size: 17px;
+}
+
+.col-2:hover {
+  background-color: #ace0f9;
+  opacity: 0.4;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/7151c2670b.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Which weather?☀️</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+    </br>
+
+      <h1><span id = searchCity>Oslo</span> <button id="location-button"> <i class="fa-solid fa-location-arrow"></i></button></h1>
+      <h2>Sunday August 7th</h2>
+      <br>
+      <br>
+    
+      <h3>time</h3>
+         <br>
+         <br>
+    
+
+<div class="currentTemp">
+     <div class="temp-text"><span><span id="temp">18°</span> </span><span id="line"> | </span><span id="E-temp">15° </span> </div> 
+      <br> <a href="#" id="currentC">°C </a> | <a href="#" id="currentF">°F</a>
+      <br>
+      <span id="description">description here</span>
+      <div class=humidity> <i class="fa-solid fa-droplet"></i> Humidity: <span id="humidity-prec"> 5 </span> % </div>
+      <div class="windspeed"><i class="fa-solid fa-wind"></i> Windspeed: <span id="wind-speed"> 10</span> m/s</div>
+      
+</div>
+<div id="weather-icon">
+    <img src="https://openweathermap.org/img/wn/03d@2x.png" width= "150" alt="clouded" id="weatherIcon">
+</div>
+    
+      <nav class="navbar">
+  <div class="container-fluid">
+    <form class="d-flex" role="search" id = search-form>
+      <input class="form-control" type="search" placeholder="Find other city" aria-label="Look up" id = "searchBar-text">
+      <button class="search" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<br>
+   <div class="weather-forecast" id="forecast"></div>
+    </div>
+    </div>
+  </div>
+    <div class="link"><a href="https://github.com/ingermariemy/Weather-project-new-sept10">Open Source Code by Inger-Marie Myrvoll</a></div>
+    <script src="app.js"></script>
+    
+  </body>
+</html>
