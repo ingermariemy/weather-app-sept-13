@@ -46,13 +46,13 @@ function formatDate(Today) {
 
 //forecast
 
-function displayForecast() {
+function displayForecast(); {
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row`;
+  let forecastHTML = `<div class="row"`;
   forecastHTML =
-    forecastHTML +
-    `<div class="col-2">
+    forecastHTML + 
+     `<div class="col-2">
       <div class="weather-forecast-date">
        Wed
       </div>
@@ -66,10 +66,12 @@ function displayForecast() {
      </span>
      </div>
      </div>
-  `;
+     </div>`
+  
 
-  forecastHTML = forecastHTML + `</div>`;
+  forecastHTML = forecastHTML + `</div>`
   forecastElement.innerHTML = forecastElement;
+
 }
 
 //Fahrenheit conversion
