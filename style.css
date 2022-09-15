@@ -124,7 +124,7 @@ h3 {
 
 .col-2 {
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: #ace0f9;
   border-radius: 20px;
   display: inline-block;
@@ -225,4 +225,5 @@ h3 {
 
 hr {
   color: #86c3fa;
+  padding-top: 5px;
 }
