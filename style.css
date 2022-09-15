@@ -134,6 +134,7 @@ h3 {
   margin-left: 20px;
   padding-bottom: 10px;
   text-align: center;
+  height: 130px;
 }
 
 .icon {
@@ -143,6 +144,9 @@ h3 {
 .container {
   align-items: center;
   border-radius: 45px;
+  border: solid;
+  border-width: 1px;
+  border-color: #ffffff;
   margin-top: 50px;
   margin-left: 300px;
   background: linear-gradient(to bottom right, #fff1eb 20%, #ace0f9 100%);
@@ -150,9 +154,9 @@ h3 {
   padding-right: 10px;
   max-width: max-content;
   display: block;
-  height: 580px;
+  height: 550px;
   position: absolute;
-  box-shadow: 0px 0px 11px #e7e0e0;
+  box-shadow: 0px 0px 5px #00000321;
   border-width: 1px;
 }
 
@@ -225,5 +229,9 @@ h3 {
 
 hr {
   color: #86c3fa;
-  padding-top: 5px;
+  padding-top: 10px;
+}
+
+.row {
+  margin-top: -50px;
 }
