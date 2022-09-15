@@ -49,7 +49,7 @@ function formatDate(Today) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row"`;
-  let days = ["Thu", "Fri", "Sat", "Sun"];
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
@@ -58,7 +58,7 @@ function displayForecast() {
          <div class="weather-forecast-date">${day}</div>
          <img 
          src="https://openweathermap.org/img/wn/03d@2x.png" 
-         width="40" 
+         width="50" 
          alt="clouded" 
          id="weatherIcon">
      <div class="weather-forecast-temperature">
