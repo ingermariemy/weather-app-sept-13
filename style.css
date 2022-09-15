@@ -127,15 +127,12 @@ h3 {
   border-width: 2px;
   border-color: #ace0f9;
   border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: inline-block;
+  padding-top: 10px;
   color: #016fc5;
   font-family: "Lato", sans-serif;
-  font-size: large;
-  margin-right: 20px;
   margin-left: 20px;
-  margin-top: 20px;
-  width: 150px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -169,7 +166,7 @@ h3 {
 #location-button:hover {
   cursor: pointer;
   color: #016fc5;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .link {
@@ -219,10 +216,13 @@ h3 {
 }
 
 .weather-forecast-temperature {
-  font-size: 17px;
+  font-size: 16px;
 }
-
 .col-2:hover {
   background-color: #ace0f9;
   opacity: 0.4;
+}
+
+hr {
+  color: #86c3fa;
 }
