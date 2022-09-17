@@ -14,7 +14,7 @@ h1:hover {
   display: flex;
   color: #ace0f9;
   padding-bottom: 250px;
-  margin-top: -300px;
+  margin-top: -350px;
   margin-right: 40px;
   margin-left: 460px;
 }
@@ -128,7 +128,7 @@ h3 {
   height: 150px;
   width: 125px;
   margin-left: 25px;
-  margin-top: -25px;
+  margin-top: 20px;
 }
 .icon {
   font-size: 50px;
