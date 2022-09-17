@@ -46,15 +46,16 @@ function formatDate(Today) {
 
 //forecast
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = `<div class="row"`;
+  let forecastHTML = `<div class="row row-cols-5">`;
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
       `
-      <div class="col-2">
+      <div class="col forecast-day">
          <div class="weather-forecast-date">${day}</div>
          <img 
          src="https://openweathermap.org/img/wn/03d@2x.png" 
@@ -123,6 +124,14 @@ let apiKey = "126b4c3109648af60d931bdfb6f221d1";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Oslo&units=metric&appid=126b4c3109648af60d931bdfb6f221d1`;
 let city = "response.data.name";
 
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "a43564c91a6c605aeb564c9ed02e3858";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function showTemp(response) {
   let h1 = document.querySelector("#searchCity");
   h1.innerHTML = response.data.name;
@@ -150,6 +159,8 @@ function showTemp(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+
+  getForecast(response.data.coord);
 }
 
 axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
@@ -173,5 +184,3 @@ let locationButton = document.querySelector("#location-button");
 locationButton.addEventListener("click", getCurrentPosition);
 
 getCurrentPosition();
-
-displayForecast();
